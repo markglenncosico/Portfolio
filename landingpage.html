@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Glenn Fulgar Cosico - Full-Stack Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="landingpage.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="nav-brand" onclick="switchTab('home')" style="cursor: pointer;"><span>MARK GLENN COSICO</span></div>
+        <nav class="nav-links">
+            <button class="nav-tab active" data-target="home"><i class="fa-solid fa-house"></i> Home</button>
+            <button class="nav-tab" data-target="about"><i class="fa-solid fa-user"></i> About</button>
+            <button class="nav-tab" data-target="skills"><i class="fa-solid fa-code"></i> Skills</button>
+            <button class="nav-tab" data-target="projects"><i class="fa-solid fa-laptop-code"></i> Projects</button>
+            <button class="nav-tab" data-target="resume"><i class="fa-solid fa-file-lines"></i> Resume</button>
+        </nav>
+        <div class="nav-actions">
+            <button id="themeToggleBtn" title="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <main class="main-container">
+        
+        <!-- TAB 1: HOME / LANDING PAGE -->
+        <section id="home" class="tab-content active animate-fade-in">
+            <div class="hero-section">
+                <div class="hero-img-container">
+                    <img src="profile.jpg" alt="Mark Glenn Fulgar Cosico" class="hero-img">
+                </div>
+                <div class="hero-text">
+                    <span class="greeting">Hello, World! I'm</span>
+                    <h1>Mark Glenn Fulgar Cosico</h1>
+                    <h2>Full-Stack Developer & IT Student</h2>
+                    <p>Motivated IT student at Polytechnic University of the Philippines (PUP) Calauan, specializing in building robust web applications, responsive interfaces, and scalable backends.</p>
+                    <div class="hero-buttons">
+
+    <a class="btn-outline" href="https://github.com/markglenncosico" target="_blank" class="github-btn"><i class="fa-brands fa-github"></i> View GitHub</a>
+</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: ABOUT SECTION -->
+        <section id="about" class="tab-content animate-fade-in">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-user"></i> About Me</h2>
+                <p>Get to know more about who I am and my background.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Professional Summary</h3>
+                    <p>Motivated and detail-oriented Information Technology student at Polytechnic University of the Philippines (PUP) Calauan with hands-on experience in full-stack web development. Proficient in building responsive front-end interfaces and robust back-end systems using modern frameworks and databases.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Personal Information</h3>
+                    <ul class="info-list">
+                        <li><strong>Age:</strong> 22</li>
+                        <li><strong>Sex:</strong> Male</li>
+                        <li><strong>Civil Status:</strong> Single</li>
+                        <li><strong>Nationality:</strong> Filipino</li>
+                        <li><strong>Religion:</strong> Roman Catholic</li>
+                        <li><strong>Place of Birth:</strong> San Pablo City</li>
+                        <li><strong>Location:</strong> Calauan, Laguna, Philippines</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: SKILLS SECTION -->
+        <section id="skills" class="tab-content animate-fade-in">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-code"></i> Technical Skills</h2>
+                <p>Technologies and tools I work with.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-terminal"></i> Programming Languages</h3>
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>TypeScript</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                        <li>HTML5, CSS3/SCSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-desktop"></i> Frontend Technologies</h3>
+                    <ul>
+                        <li>React.js & Next.js</li>
+                        <li>Tailwind CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-server"></i> Backend & Databases</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Spring Boot APIs</li>
+                        <li>RESTful APIs</li>
+                        <li>MySQL, PostgreSQL, MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-tools"></i> Tools & Competencies</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>Debugging & Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: PROJECTS SECTION -->
+        <section id="projects" class="tab-content animate-fade-in">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-laptop-code"></i> Featured Projects</h2>
+                <p>Some of the projects I've built since first year.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Interactive Pokedex (Spring Boot)</h3>
+                    <span class="tech-tag">Java, Spring Boot, RESTful APIs, Maven</span>
+                    <p>Developed a backend-driven Pokedex application using Spring Boot, implementing robust RESTful endpoints to fetch, filter, and manage Pokemon data. Applied Object-Oriented Programming (OOP) principles for clean architecture.</p>
+                     <a class="btn-outline" href="https://github.com/markglenncosico/Inte_Pokedex_Project" target="_blank" class="github-btn"><i class="fa-brands fa-github"></i> Repository</a>
+                </div>
+                <div class="project-card">
+                    <h3>OOP Pokedex Web</h3>
+                    <span class="tech-tag">Java, OOP, REST API Integration</span>
+                    <p>Built a desktop/console-based Pokédex Web focusing on strong Object-Oriented Programming (OOP) design patterns like inheritance, encapsulation, and polymorphism, integrating external REST APIs.</p>
+                      <a class="btn-outline" href="https://github.com/markglenncosico/OOP_Pokedex_Project" target="_blank" class="github-btn"><i class="fa-brands fa-github"></i> Repository</a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: RESUME SECTION (Your Original Layout) -->
+        <section id="resume" class="tab-content animate-fade-in">
+            <div class="resume-top-bar">
+                <h2><i class="fa-solid fa-file-lines"></i> ATS Resume View</h2>
+    
+
+<!-- Top Navigation / Actions -->
+    <header class="top-nav">
+            <a href="Mark_Glenn_Cosico_Resume.pdf" download="Mark_Glenn_Cosico_Resume.pdf" class="btn-primary" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-download"></i> Download ATS PDF</a>
+        </div>
+    </header>
+
+            <div class="resume-container">
+                <!-- Sidebar / Profile Section -->
+                <aside class="sidebar">
+                    <div class="profile-img-container">
+                        <img src="profile.jpg" alt="Mark Glenn Fulgar Cosico" class="profile-img">
+                        <div class="status-badge"><span class="pulse-dot"></span> Available for Hire</div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i> Calauan, Laguna, Philippines</li>
+                            <li><i class="fa-solid fa-phone"></i> 0945 125 2456</li>
+                            <li><i class="fa-solid fa-envelope"></i> markglenncosico651@gmail.com</li>
+                            <li><i class="fa-solid fa-globe"></i> <a href="#" target="_blank">Portfolio</a></li>
+                            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/markglenncosico" target="_blank">github.com/markglenncosico</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="personal-info">
+                        <h3>Personal Details</h3>
+                        <ul>
+                            <li><strong>Age:</strong> 22</li>
+                            <li><strong>Sex:</strong> Male</li>
+                            <li><strong>Civil Status:</strong> Single</li>
+                            <li><strong>Nationality:</strong> Filipino</li>
+                            <li><strong>Religion:</strong> Roman Catholic</li>
+                            <li><strong>Place of Birth:</strong> San Pablo City</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Main Content Section -->
+                <div class="resume-main">
+                    <div class="header-titles">
+                        <h1>Mark Glenn Fulgar Cosico</h1>
+                        <h2>Full-Stack Developer</h2>
+                    </div>
+
+                    <div class="section">
+                        <h3><i class="fa-solid fa-user-tie"></i> Professional Summary</h3>
+                        <p>Motivated and detail-oriented Information Technology student at Polytechnic University of the Philippines (PUP) Calauan with hands-on experience in full-stack web development. Proficient in building responsive front-end interfaces and robust back-end systems using modern frameworks and databases. Eager to leverage technical skills, collaborative problem-solving, and a strong foundation in software engineering to contribute as a Full-Stack Developer intern or junior engineer.</p>
+                    </div>
+
+                    <div class="section">
+                        <h3><i class="fa-solid fa-code"></i> Technical Skills</h3>
+                        <ul class="skills-list">
+                            <li><strong>Programming Languages:</strong> JavaScript (ES6+), TypeScript, Python, PHP, HTML5, CSS3/SCSS</li>
+                            <li><strong>Frontend Technologies:</strong> React.js, Next.js, Tailwind CSS, Bootstrap, Responsive Web Design</li>
+                            <li><strong>Backend Technologies:</strong> Node.js, Springboot APIs, RESTful APIs</li>
+                            <li><strong>Databases & Storage:</strong> MySQL, PostgreSQL, MongoDB</li>
+                            <li><strong>Tools & Version Control:</strong> Git, GitHub, VS Code</li>
+                            <li><strong>Core Competencies:</strong> Full-Stack Development, Object-Oriented Programming (OOP), Problem Solving, Debugging</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h3><i class="fa-solid fa-laptop-code"></i> Projects</h3> 
+                        <div class="project-item">
+                            <h4>Interactive Pokedex (Spring Boot) | <span>Java, Spring Boot, RESTful APIs, Maven</span></h4>
+                            <ul>
+                                <li>Developed a backend-driven Pokedex application using Spring Boot, implementing robust RESTful endpoints to fetch, filter, and manage Pokemon data.</li>
+                                <li>Applied Object-Oriented Programming (OOP) principles to structure data models, services, and controllers for clean, maintainable architecture.</li>
+                            </ul>
+                             <a class="btn-outline" href="https://github.com/markglenncosico/Inte_Pokedex_Project" target="_blank" class="github-btn"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                        <div class="project-item">
+                            <h4>OOP Pokedex Web | <span>Java, OOP, REST API Integration</span></h4>
+                            <ul>
+                                <li>Built a desktop/console-based Pokédex Web focusing on strong Object-Oriented Programming (OOP) design patterns such as inheritance, encapsulation, and polymorphism.</li>
+                                <li>Integrated external REST APIs to dynamically retrieve real-time Pokémon statistics, abilities, and sprites.</li>
+                            </ul>
+                             <a class="btn-outline" href="https://github.com/markglenncosico/OOP_Pokedex_Project" target="_blank" class="github-btn"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Science in Information Technology <span class="edu-date">| 2024 - 2028</span></h4>
+                            <p>Polytechnic University of the Philippines, Calauan Campus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script src="landingpage.js"></script>
+</body>
+</html>
